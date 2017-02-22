@@ -23,21 +23,23 @@
   font-weight: normal;
   font-style: normal; }
   .vjs-icon-play:before, .video-js .vjs-big-play-button:before, .video-js .vjs-play-control:before {
-    content: "\f101"; }
+    content: "\f101"; 
+    margin-top: 36px;}
 
 .vjs-icon-play-circle {
   font-family: VideoJS;
   font-weight: normal;
   font-style: normal; }
   .vjs-icon-play-circle:before {
-    content: "\f102"; }
+    content: "\f102"; 
+    margin-top: 36px;}
 
 .vjs-icon-pause, .video-js .vjs-play-control.vjs-playing {
   font-family: VideoJS;
   font-weight: normal;
   font-style: normal; }
   .vjs-icon-pause:before, .video-js .vjs-play-control.vjs-playing:before {
-    content: "\f103"; }
+    content: "\f103";}
 
 .vjs-icon-volume-mute, .video-js .vjs-mute-control.vjs-vol-0,
 .video-js .vjs-volume-menu-button.vjs-vol-0 {
@@ -46,7 +48,8 @@
   font-style: normal; }
   .vjs-icon-volume-mute:before, .video-js .vjs-mute-control.vjs-vol-0:before,
   .video-js .vjs-volume-menu-button.vjs-vol-0:before {
-    content: "\f104"; }
+    content: "\f104"; 
+  margin-top: 36px;}
 
 .vjs-icon-volume-low, .video-js .vjs-mute-control.vjs-vol-1,
 .video-js .vjs-volume-menu-button.vjs-vol-1 {
@@ -55,7 +58,8 @@
   font-style: normal; }
   .vjs-icon-volume-low:before, .video-js .vjs-mute-control.vjs-vol-1:before,
   .video-js .vjs-volume-menu-button.vjs-vol-1:before {
-    content: "\f105"; }
+    content: "\f105"; 
+  margin-top: 36px;}
 
 .vjs-icon-volume-mid, .video-js .vjs-mute-control.vjs-vol-2,
 .video-js .vjs-volume-menu-button.vjs-vol-2 {
@@ -64,7 +68,8 @@
   font-style: normal; }
   .vjs-icon-volume-mid:before, .video-js .vjs-mute-control.vjs-vol-2:before,
   .video-js .vjs-volume-menu-button.vjs-vol-2:before {
-    content: "\f106"; }
+    content: "\f106"; 
+  margin-top: 36px;}
 
 .vjs-icon-volume-high, .video-js .vjs-mute-control,
 .video-js .vjs-volume-menu-button {
@@ -73,21 +78,24 @@
   font-style: normal; }
   .vjs-icon-volume-high:before, .video-js .vjs-mute-control:before,
   .video-js .vjs-volume-menu-button:before {
-    content: "\f107"; }
+    content: "\f107"; 
+  margin-top: 36px;}
 
 .vjs-icon-fullscreen-enter, .video-js .vjs-fullscreen-control {
   font-family: VideoJS;
   font-weight: normal;
   font-style: normal; }
   .vjs-icon-fullscreen-enter:before, .video-js .vjs-fullscreen-control:before {
-    content: "\f108"; }
+    content: "\f108"; 
+  margin-top: 36px;}
 
 .vjs-icon-fullscreen-exit, .video-js.vjs-fullscreen .vjs-fullscreen-control {
   font-family: VideoJS;
   font-weight: normal;
   font-style: normal; }
   .vjs-icon-fullscreen-exit:before, .video-js.vjs-fullscreen .vjs-fullscreen-control:before {
-    content: "\f109"; }
+    content: "\f109"; 
+  margin-top: 36px;}
 
 .vjs-icon-square {
   font-family: VideoJS;
@@ -533,7 +541,8 @@ body.vjs-full-window {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
-  transition: all 0.4s; }
+  transition: all 0.4s; 
+  margin-top: 36px;}
 
 .vjs-menu-button-inline:hover .vjs-menu,
 .vjs-menu-button-inline:focus .vjs-menu,
@@ -565,7 +574,7 @@ body.vjs-full-window {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 3.0em;
+  height: 10em;
   background-color: #2B333F;
   background-color: rgba(43, 51, 63, 0.7); }
 
@@ -971,7 +980,8 @@ body.vjs-full-window {
   min-width: 2em;
   width: auto;
   padding-left: 1em;
-  padding-right: 1em; }
+  padding-right: 1em; 
+  margin-top: 36px;}
 
 .vjs-live .vjs-time-control {
   display: none; }

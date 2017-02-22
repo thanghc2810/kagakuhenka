@@ -15,17 +15,17 @@
 
     <script src="./public/js/video.min.js"></script>
     <script src="./public/js/Youtube.min.js"></script>
-    <script src="./public/js/custom.js"></script>
 
     <link type="text/css" rel="stylesheet" href="./public/css/video-js.css" />
+    <script src="./public/js/custom.js"></script>
 </head>
 <body>
 
 
 
-<div class="">
+<div class="body-component">
 
-     <div id="wrapper">
+     <div id="wrapper" class="toggled">
         
 
 
@@ -61,7 +61,7 @@
 
      <!-- #navbar-wrapper -->   
     <div class="">
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar" style="margin-bottom: 0px;background: #ffd600;">
         <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -69,49 +69,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">My Store</a>
+            <a class="navbar-brand" href="#">My Homepage</a>
         </div>
         
         <div class="collapse navbar-collapse js-navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="dropdown mega-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <span class="caret"></span></a>              
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu1 <span class="caret"></span></a>              
                     <ul class="dropdown-menu mega-dropdown-menu">
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Men Collection</li>                            
-                                <div id="menCollection" class="carousel slide" data-ride="carousel">
-                                  <div class="carousel-inner">
-                                    <div class="item active">
-                                        <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
-                                        <h4><small>Summer dress floral prints</small></h4>                                        
-                                        <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
-                                    </div><!-- End Item -->
-                                    <div class="item">
-                                        <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
-                                        <h4><small>Gold sandals with shiny touch</small></h4>                                        
-                                        <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
-                                    </div><!-- End Item -->
-                                    <div class="item">
-                                        <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
-                                        <h4><small>Denin jacket stamped</small></h4>                                        
-                                        <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
-                                    </div><!-- End Item -->                                
-                                  </div><!-- End Carousel Inner -->
-                                  <!-- Controls -->
-                                  <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                                </div><!-- /.carousel -->
-                                <li class="divider"></li>
-                                <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
-                            </ul>
-                        </li>
                         <li class="col-sm-3">
                             <ul>
                                 <li class="dropdown-header">Features</li>
@@ -146,7 +111,7 @@
                     </ul>               
                 </li>
                 <li class="dropdown mega-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <span class="caret"></span></a>                
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">MENU2 <span class="caret"></span></a>                
                     <ul class="dropdown-menu mega-dropdown-menu">
                         <li class="col-sm-3">
                             <ul>
@@ -179,44 +144,9 @@
                                 <li><a href="#">Slide down on Hover</a></li>                         
                             </ul>
                         </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Women Collection</li>                            
-                                <div id="womenCollection" class="carousel slide" data-ride="carousel">
-                                  <div class="carousel-inner">
-                                    <div class="item active">
-                                        <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
-                                        <h4><small>Summer dress floral prints</small></h4>                                        
-                                        <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
-                                    </div><!-- End Item -->
-                                    <div class="item">
-                                        <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
-                                        <h4><small>Gold sandals with shiny touch</small></h4>                                        
-                                        <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
-                                    </div><!-- End Item -->
-                                    <div class="item">
-                                        <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
-                                        <h4><small>Denin jacket stamped</small></h4>                                        
-                                        <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
-                                    </div><!-- End Item -->                                
-                                  </div><!-- End Carousel Inner -->
-                                  <!-- Controls -->
-                                  <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                                </div><!-- /.carousel -->
-                                <li class="divider"></li>
-                                <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
-                            </ul>
-                        </li>
                     </ul>               
                 </li>
-                <li><a href="#">Store locator</a></li>
+                <li><a href="#">MENU3</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -229,7 +159,7 @@
                 <li><a href="#">Separated link</a></li>
               </ul>
             </li>
-            <li><a href="#">My cart (0) items</a></li>
+            <li><a href="#">Notification</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </nav>
@@ -238,54 +168,59 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-
-    <h2>Video Preview</h2>
-    <hr/>
+<div class="sub-component">
+<h2>Video Preview</h2>
     
-
-<div class="container">
+<div class="">
     <div class="row">
-        <ul class="breadcrumb">
-            <li class="completed"><a href="javascript:void(0);">Personal Contact</a></li>
-            <li class="active"><a href="javascript:void(0);">Educational/Experience</a></li>
-            <li><a href="javascript:void(0);">Photo Upload</a></li>
-            <li><a href="javascript:void(0);">Payment</a></li>
-        </ul>
+        <hr class="hr-primary" />
+        <ol class="breadcrumb bread-primary ">
+            <li><a href="#">HOME</a></li>
+            <li class="active">VIDEO</li>
+        </ol>
     </div>
-</div>    
+</div>     
+</div>
 
 
-            <div class="row">
-                <div class="col-md-3 frame-01">
+
+            <div class="row three-component">
+                <div class="col-md-3 frame-01 sub-component">
                     <div class="milestones">
 
                     </div>
-                    <hr/>
                     <div class="button-edit-video">
                         <button type="button" class="btn btn-warning">Edit video</button>
                     </div>
                     <hr/>
                     <div class="milestone-frame">
-                        <div class="milestone-name-box">
-                            <h5>授業のチャプター</h5>
-                        </div>
                         <div class="panel-group">
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#collapse1">Chapter</a>
+                                <a data-toggle="collapse" href="#collapse1">授業のチャプター</a>
                               </h4>
                             </div>
                             <div id="collapse1" class="panel-collapse collapse in">
                               <ul class="list-group">
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-sm-8"><a href="#" class=""><i class="fa fa-play-circle-o" aria-hidden="true">&ensp;</i>First chapter</a></div>
-                                        <div class="col-sm-4 text-right">01:00</div>
+                                        <div class="col-sm-8"><a href="#" onclick="seekToTimer('15');"><i class="fa fa-play-circle-o" aria-hidden="true">&ensp;</i>Chapter 01</a></div>
+                                        <div class="col-sm-4 text-right">00:15</div>
                                     </div>
                                 </li>
-                                <li class="list-group-item">Two</li>
-                                <li class="list-group-item">Three</li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-8"><a href="#" onclick="seekToTimer('30');"><i class="fa fa-play-circle-o" aria-hidden="true">&ensp;</i>Chapter 02</a></div>
+                                        <div class="col-sm-4 text-right">00:30</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-8"><a href="#" onclick="seekToTimer('45');"><i class="fa fa-play-circle-o" aria-hidden="true">&ensp;</i>Chapter 03</a></div>
+                                        <div class="col-sm-4 text-right">00:45</div>
+                                    </div>
+                                </li>
                               </ul>
                               <div class="panel-footer">Footer</div>
                             </div>
@@ -294,122 +229,163 @@
                     </div>
                 </div>
                 <div class="col-md-6 frame-02">
-                    <div class="video-name">
-                        <div class="panel panel-default">
-                          <div class="panel-body">Video name</div>
-                          <a href="#" data-toggle="tooltip" title="気になる"><i class="fa fa-star-o" aria-hidden="true"></i></a>
-                        </div>
+
+                <div class="video frame sub-component video-frame">
+                      <video
+                        id="vid1"
+                        class="video-js vjs-default-skin vjs-16-9" 
+                        preload="none"
+                        controls
+                        width="auto" height="auto"
+                        data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=DA-Kj65xSFU"}] }'
+                      >
+                      </video>
+                </div>
+
+                <div class="sub-component">
+                  <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-8"><h4>ビデオの名前</h4></div>
+                            <div class="col-sm-4　text-right"style="font-size: 2em;text-align: right;"><a href="#" data-toggle="tooltip" title="気になる"><i class="fa fa-star-o" aria-hidden="true"></i></a></div>
+                        </div>  
+                        <hr/>
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <ul class="pager" style="text-align: left;">
+                              <li><a href="#">Previous</a></li>
+                              <li><a href="#">Next</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-4 text-right">
+                              <button type="button" class="btn btn-default" style="margin-top: 16px;">show content</button>
+                          </div>
+                        </div>    
+                  </div>
+                </div>
+
+                <div class="form-group sub-component">
+                  <label for="comment">Comment</label>&ensp;<span class="badge">42</span>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="./public/img/avatar3.jpg" class="media-object" style="width:105px">
                     </div>
-                    <div class="video frame">
-  <video
-    id="vid1"
-    class="video-js vjs-default-skin vjs-16-9" 
-    preload="none"
-    controls
-    width="auto" height="auto"
-    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=8F6rnQu7qIg"}] }'
-  >
-  </video>
-  <script>
-  // An example of playing with the Video.js javascript API
-  // You can look at the doc there: http://docs.videojs.com/docs/guides/api.html
-  // var myPlayer;
-  // videojs('vid1').ready(function() {
-  //   myPlayer = this;
-  //   // myPlayer.src({ type: 'video/youtube', src: 'https://www.youtube.com/watch?v=H90NdI42xNc' });
-  //   myPlayer.currentTime(500);
-  // });
-
-//   VideoJS.DOMReady(function() {
-// var player = VideoJS.setup("current_video");
-// player.play();
-// player.currentTime(666);
-// });
-//   console.log(player.getCurrentTime());
-  </script>     
-
-<div class="panel panel-default">
-  <div class="panel-body">
-      <div class="row">
-          <div class="col-sm-8">
-            <ul class="pager">
-              <li><a href="#">Previous</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-4 text-right">
-              <button type="button" class="btn btn-default">show content</button>
-          </div>
-      </div>    
-  </div>
-</div>
-
-<div class="form-group">
-  <label for="comment">Comment:</label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>  
+  
   <hr/>
   <div class="row">
-      <div class="col-sm-8">
-          <i class="fa fa-play-circle-o" aria-hidden="true">&ensp;</i>
-          <i class="fa fa-play-circle-o" aria-hidden="true">&ensp;</i>
-          <i class="fa fa-play-circle-o" aria-hidden="true">&ensp;</i>
+      <div class="col-sm-8 icon-box">
+          <i class="fa fa-camera" aria-hidden="true">&ensp;</i>
+          <i class="fa fa-microphone" aria-hidden="true">&ensp;</i>
+          <i class="fa fa-smile-o" aria-hidden="true">&ensp;</i>
       </div>
       <div class="col-sm-4 text-right">
-          <button type="button" class="btn btn-primary">Edit</button>
+          <button type="button" class="btn btn-primary">投稿</button>
       </div>
   </div>  
 </div>
 
-<div class="comment-component">
+<div class="comment-component sub-component">
 
-  <div class="media" id="cmt01">
-    <div class="media-left">
-      <img src="./public/img/avatar1.jpg" class="media-object" style="width:45px">
-    </div>
-    <div class="media-body">
-  <div class="row">
-      <div class="col-sm-7">
-          <h4 class="media-heading">John Doe<small>&ensp;<a href="#" onclick="seekToTimer();">02:00</a></small></h4>
-      </div>
-      <div class="col-sm-4 text-right">
-          <h4 class="media-heading"><small><i>2017年01月01日</i></small></h4>
-      </div>    
-  </div>    
-       
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      
-      <!-- Nested media object -->
-      <div class="media">
+    <div class="media" id="cmt01">
         <div class="media-left">
-          <img src="img_avatar2.png" class="media-object" style="width:45px">
+          <img src="./public/img/avatar1.jpg" class="media-object" style="width:45px">
         </div>
         <div class="media-body">
-          <h4 class="media-heading">John Doe <small><i>Posted on February 20, 2016</i></small></h4>
+          <div class="row">
+              <div class="col-sm-8">
+                  <h4 class="media-heading">John Doe<small>&ensp;<a href="#" onclick="seekToTimer('15');">00:15</a></small></h4>
+              </div>
+              <div class="col-sm-4 text-right">
+                  <h4 class="media-heading"><small><i>2017年01月01日</i></small></h4>
+              </div>    
+          </div>    
+           
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        
-        <!-- Nested media object -->
-        <div class="media">
-          <div class="media-left">
-            <img src="img_avatar4.png" class="media-object" style="width:45px">
+          
+          <!-- Nested media object -->
+          <div class="media">
+                <div class="media-left">
+                  <img src="./public/img/avatar2.jpg" class="media-object" style="width:45px">
+                </div>
+                <div class="media-body">
+                  <div class="row">
+                      <div class="col-sm-8">
+                          <h4 class="media-heading">John Doe</h4>
+                      </div>
+                      <div class="col-sm-4 text-right">
+                          <h4 class="media-heading"><small><i>2017年01月01日</i></small></h4>
+                      </div>    
+                  </div>  
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                
+                <!-- Nested media object -->
+                <div class="media">
+                  <div class="media-left">
+                    <img src="./public/img/avatar3.jpg" class="media-object" style="width:45px">
+                  </div>
+                  <div class="media-body">
+                  <div class="row">
+                      <div class="col-sm-8">
+                          <h4 class="media-heading">John Doe</h4>
+                      </div>
+                      <div class="col-sm-4 text-right">
+                          <h4 class="media-heading"><small><i>2017年01月01日</i></small></h4>
+                      </div>    
+                  </div>  
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
           </div>
-          <div class="media-body">
-            <h4 class="media-heading">Jane Doe <small><i>Posted on February 20, 2016</i></small></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
         </div>
-        
-      </div>
+    </div>
+
+    <div class="media" id="cmt02">
+        <div class="media-left">
+          <img src="./public/img/avatar2.jpg" class="media-object" style="width:45px">
+        </div>
+        <div class="media-body">
+          <div class="row">
+              <div class="col-sm-8">
+                  <h4 class="media-heading">John Doe<small>&ensp;<a href="#" onclick="seekToTimer('30');">00:30</a></small></h4>
+              </div>
+              <div class="col-sm-4 text-right">
+                  <h4 class="media-heading"><small><i>2017年01月01日</i></small></h4>
+              </div>    
+          </div>    
+           
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          
+        </div>
+    </div>
+
+    <div class="media" id="cmt03">
+        <div class="media-left">
+          <img src="./public/img/avatar3.jpg" class="media-object" style="width:45px">
+        </div>
+        <div class="media-body">
+          <div class="row">
+              <div class="col-sm-8">
+                  <h4 class="media-heading">John Doe<small>&ensp;<a href="#" onclick="seekToTimer('45');">00:45</a></small></h4>
+              </div>
+              <div class="col-sm-4 text-right">
+                  <h4 class="media-heading"><small><i>2017年01月01日</i></small></h4>
+              </div>    
+          </div>    
+           
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          
+        </div>
     </div>
 </div>
 
 
-                    </div>
-
-
                 </div>
-                <div class="col-md-3 frame-03">
-                    This is content for presentation.
+                <div class="col-md-3 frame-03 sub-component">
+                    <p id="test-content">This is content for presentation.</p>
                 </div>
                 
             </div> 
