@@ -13,7 +13,6 @@ function seekToTimer(time) {
 }
 function showSlide(){
 
-        console.log(myPlayer.currentTime());
     $("#test-content").html("Show Slide");
 }
 function showTest(){
@@ -67,6 +66,19 @@ $(document).ready(function() {
 });
 
 
+//stupid function ..................................................................................................
+// function showIcon(timer) {
+//     var div = document.createElement('div');
+//     div.className = 'comment-user-light1';
+//     div.innerHTML = "<a href='#cmt01'><img src='./public/img/avatar1.jpg' height='20' width='20'></a>"
+//     document.getElementsByClassName("vjs-control-bar")[0].appendChild(div);
+//     // alert("Width of div: " + $("#collapse1").width());
+//     var main_width = $(".col-md-3 frame-03 sub-component").width();
+//     console.log("main_width:" + main_width);
+//     var width=(timer/100)*main_width;
+//     console.log("width:" + width);
+//     $(".comment-user-light1").css("margin-left", width+"px");
+// }
 // show avatar in progress bar
   $( document ).ready(function() {
     var div = document.createElement('div');
@@ -147,3 +159,36 @@ $(document).ready(function() {
             $(".comment-user-light5").animate({"margin-left":"520px"},400);
         });
 });    
+
+// end of stupid function .............................................................................................
+
+
+// function for comment
+$(document).ready(function(){
+    $( "#comment-button" ).click(function() {
+        var text = $('textarea#comment').val();
+        var decode;
+        //highlight tag or name
+    var patt1 = /(@|#)(.*?)(\s|$)/g;
+    var result = text.match(patt1);
+    if(result){
+        for(var i=0; i<result.length ; i++){
+            result[i].replace(/(\s|\.)/g, '');
+            decode = text.replace(result[i], "<a href='#'>" + result[i] + "</a>");
+            text = decode;
+        }
+    }
+ 
+        var html = "<div class='media' id='cmt02'> <div class='media-left'> <img src='./public/img/avatar2.jpg' class='media-object' style='width:45px'> </div> <div class='media-body'> <div class='row'> <div class='col-sm-8'> <h4 class='media-heading'>John Doe<small>&ensp;<a href='#' onclick='seekToTimer('30');'>00:30</a></small></h4> </div> <div class='col-sm-4 text-right'> <h4 class='media-heading'><small><i>2017年01月01日</i></small></h4> </div> </div> <p>";
+        html+=text;
+        html += "</p> </div> </div>";
+        $('.comment-component').append(html);
+        $('textarea#comment').val("");
+    });
+});
+
+$(document).ready(function(){
+    document.getElementById('upload-image-button').onclick = function() {
+        document.getElementById('my_file').click();
+    };
+});

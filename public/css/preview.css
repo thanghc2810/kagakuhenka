@@ -360,3 +360,20 @@ hr {
 .video-frame{
     padding: 0px;
 }
+.icon-box-element:hover{
+    color: #fb6c02;
+}
+/*custom choose file button*/
+
+#my_file {
+    display: none;
+}
+
+#get_file {
+    background: #f9f9f9;
+    border: 5px solid #88c;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
