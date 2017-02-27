@@ -12,11 +12,12 @@ function seekToTimer(time) {
 	  });
 }
 function showSlide(){
-
-    $("#test-content").html("Show Slide");
+    $(".test-question").css("display","none");
+    $(".slide-content").css("display","block");
 }
 function showTest(){
-    $("#test-content").html("Show Test");   
+    $(".slide-content").css("display","none");
+    $(".test-question").css("display","block");
 }
 
 //for side bar
@@ -174,7 +175,7 @@ $(document).ready(function(){
     if(result){
         for(var i=0; i<result.length ; i++){
             result[i].replace(/(\s|\.)/g, '');
-            decode = text.replace(result[i], "<a href='#'>" + result[i] + "</a>");
+            decode = text.replace(result[i], "<a href='#'  style='background: #ffbd6a;'>" + result[i] + "</a>");
             text = decode;
         }
     }
@@ -191,4 +192,38 @@ $(document).ready(function(){
     document.getElementById('upload-image-button').onclick = function() {
         document.getElementById('my_file').click();
     };
+});
+
+//function for control video
+$(document).ready(function () {
+    videojs('vid1').ready(function () {
+        var myPlayer = this;
+        // myPlayer.play();
+    var pausetime1 = 3; // stop at 2 seconds
+    var pausetime2 = 4; // stop at 2 seconds
+        // myPlayer.on('timeupdate', function(e) {
+        //     console.log(myPlayer.currentTime());
+        //     if (pausetime1 < myPlayer.currentTime() && myPlayer.currentTime() < pausetime2) {
+                
+        //         myPlayer.pause();
+        //         myPlayer.currentTime(4);
+        //         // myPlayer.play();
+        //         showSlide();
+        //         return;
+        //     }
+        // });
+        myPlayer.on('timeupdate', function(e) {
+            console.log(myPlayer.currentTime());
+            if (myPlayer.currentTime() >= 20) {
+                // myPlayer.play();
+                showSlide();
+            }
+        });        
+        myPlayer.on('timeupdate', function(e) {
+            if (myPlayer.currentTime() >= 90) {
+                // myPlayer.pause();
+                showTest();
+            }
+        });
+    });
 });

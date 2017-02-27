@@ -75,7 +75,7 @@
         <div class="collapse navbar-collapse js-navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="dropdown mega-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu1 <span class="caret"></span></a>              
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">MENU1 <span class="caret"></span></a>              
                     <ul class="dropdown-menu mega-dropdown-menu">
                         <li class="col-sm-3">
                             <ul>
@@ -186,11 +186,25 @@
 
             <div class="row three-component">
                 <div class="col-md-3 frame-01 sub-component">
-                    <div class="milestones">
-
+                    <div class="sub-component">
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">動画のチャプター</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">コンテンツ（テキスト、オーディオ、動画、リンク）</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">テスト</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">通訳</label>
+                        </div>
                     </div>
-                    <div class="button-edit-video">
-                        <button type="button" class="btn btn-warning">Edit video</button>
+                    <div class="button-edit-video sub-component">
+                        <button type="button" class="btn btn-warning">動画編集</button>
+                        <button type="button" class="btn btn-warning">クラス割り当て</button>
+                        <div class="col-sm-4　text-right" style="font-size: 2em;text-align: right;"><a href="#" data-toggle="tooltip" title="気になる">
+                        <i class="fa fa-star-o" aria-hidden="true"></i></a></div>                        
                     </div>
                     <hr/>
                     <div class="milestone-frame">
@@ -245,21 +259,7 @@
                   <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-8"><h4>ビデオの名前</h4></div>
-                            <div class="col-sm-4　text-right" style="font-size: 2em;text-align: right;"><a href="#" data-toggle="tooltip" title="気になる">
-                            <i class="fa fa-star-o" aria-hidden="true"></i></a></div>
                         </div>  
-                        <hr/>
-                        <div class="row">
-                          <div class="col-sm-8">
-                            <ul class="pager" style="text-align: left;">
-                              <li><a href="#">前へ</a></li>
-                              <li><a href="#">次へ</a></li>
-                            </ul>
-                          </div>
-                          <div class="col-sm-4 text-right">
-                              <button type="button" class="btn btn-default" style="margin-top: 16px;">show content</button>
-                          </div>
-                        </div>    
                   </div>
                 </div>
 <div class="row sub-component">
@@ -313,7 +313,7 @@
               </div>    
           </div>
            
-          <p>この<a href="#" class="">#タイヤ</a>は何のためですか。教えていただき嬉しいです。</p>
+          <p><a href="#" class="" style="background: #ffbd6a;">#Chapter 01</a>この<a href="#" class="" style="background: #ffbd6a;">#タイヤ</a>は何のためですか。教えていただき嬉しいです。</p>
           <p>今何もわかりません。</p>
           <div class="row text-right">
             <div class="col-sm-8"></div>
@@ -362,7 +362,7 @@
                           <h4 class="media-heading"><small><i>2017年01月01日</i></small></h4>
                       </div>    
                   </div>  
-                  <p><a href="#" class="">@太郎くん</a>それは自動車の部品でしょう。</p>
+                  <p><a href="#" class="" style="background: #ffbd6a;">@太郎くん</a>それは自動車の部品でしょう。</p>
                 </div>
                 
                 <!-- Nested media object -->
@@ -393,14 +393,14 @@
         <div class="media-body">
           <div class="row">
               <div class="col-sm-8">
-                  <h4 class="media-heading">John Doe<small>&ensp;<a href="#" onclick="seekToTimer('30');">00:30</a></small></h4>
+                  <h4 class="media-heading">花子ちゃん<small>&ensp;<a href="#" onclick="seekToTimer('30');">00:30</a></small></h4>
               </div>
               <div class="col-sm-4 text-right">
                   <h4 class="media-heading"><small><i>2017年01月01日</i></small></h4>
               </div>    
           </div>    
            
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><a href="#" class="" style="background: #ffbd6a;">#Chapter 02</a>このビデオはすごいじゃん。</p>
           
         </div>
     </div>
@@ -412,14 +412,14 @@
         <div class="media-body">
           <div class="row">
               <div class="col-sm-8">
-                  <h4 class="media-heading">John Doe<small>&ensp;<a href="#" onclick="seekToTimer('45');">00:45</a></small></h4>
+                  <h4 class="media-heading">姫ちゃん<small>&ensp;<a href="#" onclick="seekToTimer('45');">00:45</a></small></h4>
               </div>
               <div class="col-sm-4 text-right">
                   <h4 class="media-heading"><small><i>2017年01月01日</i></small></h4>
               </div>    
           </div>    
            
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><a href="#" class="" style="background: #ffbd6a;">#Chapter 03</a>この分は役に立ちます。</p>
           
         </div>
     </div>
@@ -428,7 +428,36 @@
 
                 </div>
                 <div class="col-md-3 frame-03 sub-component">
-                    <p id="test-content">This is content for presentation.</p>
+                      <div class="row text-center" style="font-size: 1.5em;background: whitesmoke;">
+                            <p id="test-content">掲示板</p>   
+                      </div>                  
+
+                      <div class="row slide-content" >
+                            <img src='./public/img/machine.jpg' style="width:90%;height:90%;">
+                      </div>                      
+                    
+                      <div class="row test-question">
+                        　　<div class="col-sm-12">
+                            <h5>このビデオで何について勉強しますか</h5>
+
+                            <div class="radio">
+                              <label><input type="radio" name="optradio">車について</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="optradio">タイヤについて</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="optradio">ITについて</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="optradio">動機の建築について</label>
+                            </div>
+                        　　</div>
+                          <div class="col-sm-12">
+                                <button type="button" class="btn btn-primary">回答する</button>
+                                <button type="button" class="btn btn-warning">関連チャプター</button>
+                          </div>   
+                      </div>                      
                 </div>
                 
             </div> 
@@ -467,6 +496,171 @@
 
 </div>
 
+<!--footer-->
+<footer class="footer1">
+<div class="container">
+
+<div class="row"><!-- row -->
+            
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                            <li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Useful links</h1>
+                                
+                                <ul>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+                                </ul>
+                    
+                            </li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+            
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                            <li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Useful links</h1>
+                                
+                                <ul>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test Series Schedule</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Postal Coaching</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  PG Dr. Bhatia Books</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  UG Courses</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Satellite Education</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Study Centres</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  State P.G. Mocks</a></li>
+                                    <li><a  href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Results</a></li>
+                                    
+                                </ul>
+                    
+                            </li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+            
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                            <li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Useful links</h1>
+                                
+                                <ul>
+
+
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Enquiry Form</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Online Test Series</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Grand Tests Series</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Subject Wise Test Series</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Smart Book</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Test Centres</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>  Admission Form</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>  Computer Live Test</a></li>
+
+                                </ul>
+                    
+                            </li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column center -->
+                
+                   
+                    
+                        <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                            <li class="widget-container widget_recent_news"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Contact Detail </h1>
+                                
+                                <div class="footerp"> 
+                                
+                                <h2 class="title-median">Webenlance Pvt. Ltd.</h2>
+                                <p><b>Email id:</b> <a href="mailto:info@webenlance.com">info@webenlance.com</a></p>
+                                <p><b>Helpline Numbers </b>
+
+    <b style="color:#ffc106;">(8AM to 10PM):</b>  +91-8130890090, +91-8130190010  </p>
+    
+    <p><b>Corp Office / Postal Address</b></p>
+    <p><b>Phone Numbers : </b>7042827160, </p>
+    <p> 011-27568832, 9868387223</p>
+                                </div>
+                                
+                                <div class="social-icons">
+                                
+                                    <ul class="nomargin">
+                                    
+                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+                <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i></a>
+                <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
+                <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+                                    
+                                    </ul>
+                                </div>
+                            </li>
+                          </ul>
+                       </div>
+                </div>
+</div>
+</footer>
+<!--header-->
+
+<div class="footer-bottom">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                <div class="copyright">
+
+                    © 2015, Webenlance, All rights reserved
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                <div class="design">
+
+                     <a href="#">Franchisee </a> |  <a target="_blank" href="http://www.webenlance.com">Web Design & Development by Webenlance</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
